@@ -1,0 +1,199 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+:root {
+  --primary-color: #FF6B6B;      
+  --secondary-color: #1FAB89;   
+  --accent-color: #FFBF69;     
+  --background-color: #f9f9f9;   
+  --text-color: #222;            
+}
+
+header {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+main {
+  padding: 2rem;
+}
+.workout-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.workout {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(33% - 1.5rem);
+  position: relative;
+}
+
+.workout:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.workout h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.workout p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 1rem 0;
+}
+
+.workout h4 {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+.workout img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.workout-tips {
+  background-color: #e8f6f3;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.workout-tips h2 {
+  color: #27ae60;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Flexbox layout for tips */
+.workout-tips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.tip {
+  flex: 1 1 45%; /* Makes each tip take up approximately half the width */
+  min-width: 250px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tip h3 {
+  color: #2980b9;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.tip p {
+  font-size: 0.95em;
+  color: #333;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pagination a {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: #e55a5a;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .workout {
+    flex: 1 1 calc(50% - 1.5rem); 
+  }
+}
+
+@media (max-width: 480px) {
+  .workout {
+    flex: 1 1 100%; 
+  }
+}

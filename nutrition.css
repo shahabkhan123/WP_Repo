@@ -1,0 +1,196 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f7f9;
+    line-height: 1.6;
+  }  
+  :root {
+    --primary-color: #FF6B6B;
+    --secondary-color: #1FAB89;
+    --accent-color: #FFBF69;
+    --text-color: #333;
+    --bg-color: #f4f7f9;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  header {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--accent-color);
+  }
+  
+  .nutrition-header {
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .nutrition-header h2 {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.2rem;
+  }
+  
+  .nutrition-header p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .nutrition-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+  }
+  
+  .nutrition-section {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .nutrition-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 24px var(--shadow-color);
+  }
+  
+  .text-content {
+    flex: 1;
+  }
+  
+  .nutrition-section h3 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 0.8rem;
+  }
+  
+  .nutrition-section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  .nutrition-section ul li {
+    font-size: 1rem;
+    color: #666;
+    margin: 0.4rem 0;
+    line-height: 1.4;
+  }
+  
+  .nutrition-img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .nutrition-section:hover .nutrition-img {
+    transform: scale(1.05);
+  }
+section.tips {
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tips-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.tips-container .tip {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.tips-container .tip h3 {
+  color: #2980b9;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.tips-container .tip p {
+  font-size: 0.95em;
+  color: #333;
+}
+
+.workout-tips {
+  background-color: #e8f6f3;
+}
+
+.workout-tips h2 {
+  color: #27ae60;
+  text-align: center;
+}
+
+.nutrition-tips {
+  background-color: #f9f0e3;
+}
+
+.nutrition-tips h2 {
+  color: #e67e22;
+  text-align: center;
+}
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+  }
+  
+  footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: var(--accent-color);
+  }
